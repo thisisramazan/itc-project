@@ -1,0 +1,481 @@
+:root {
+    --dark: #6c6c6c;
+    --black: #000;
+    --danger: #ac1313;
+    --dark-danger: #d77474;
+  }
+  
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+  }
+  
+  .nav-wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  li {
+    list-style: none;
+    color: var(--dark);
+  }
+  
+  .nav-wrap li:last-child {
+    color: var(--black);
+    padding-bottom: 4px;
+  }
+  
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--black);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+  
+  a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:focus {
+    color: var(--danger);
+  }
+  
+  .text {
+    text-transform: uppercase;
+  }
+  
+  .banner {
+    height: 700px;
+    background: url('/assets/images/kartina.jpg') right / 50%,
+      url('/assets/images/fon.jpg') center / cover;
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+  }
+  
+  .cart {
+    margin-right: 5px;
+  }
+  
+  .subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--dark-danger);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+  
+  .title, .title-plates {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--black);
+    margin-bottom: 14px;
+    margin-top: 0;
+    position: relative;
+  }
+  
+  .title::before {
+    content: url('/assets/images/&.png');
+    position: absolute;
+    left: 430px;
+    top: -10px;
+  }
+  
+  .banner-text {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 51px;
+    margin-top: 0;
+    line-height: 24px;
+  }
+  
+  .shop-button {
+    color: white;
+    background: var(--danger);
+    text-transform: uppercase;
+    padding: 20px 30px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .banner-wrap {
+    padding: 160px 0 200px 120px;
+  }
+  
+  .category-wrap {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .category-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0 0;
+  }
+  
+  .image-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 90px;
+  }
+  
+  .category-text {
+    display: flex;
+    gap: 133px;
+    padding-bottom: 120px;
+  }
+  
+  .category-text-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 26px;
+    line-height: 40px;
+  }
+  
+  .category-description,
+  .link-detail {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .product,
+  .product-ceramic {
+    position: relative;
+    height: 220px;
+    width: 500px;
+    background: #f5f5f5;
+  }
+  
+  .product::before {
+    content: url('/assets/images/a2743382-d16a-4dd0-8059-5fba8dee2933.png');
+    width: 250px;
+    height: 509px;
+    position: absolute;
+    transform: translate(47%, -25%);
+  }
+  
+  .product-ceramic::before {
+    content: "";
+    /* Чтобы псевдоэлемент действительно занимал место */
+    display: block;
+  
+    width: 350px;
+    height: 417px;
+    transform: translate(20%, -25%);
+    background: url(/assets/images/img4.png) no-repeat center / cover;
+  }
+  
+  .product-wrap {
+    margin-top: 250px;
+    margin-bottom: 220px;
+    display: flex;
+    gap: 86px;
+  }
+  
+  .pottery-description {
+    max-width: 396px;
+  }
+  
+  .catalog {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  }
+  
+  .item {
+    justify-self: center;
+  }
+  
+  .product-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin-bottom: 23px;
+  }
+  
+  .link-detail {
+    font-weight: 700;
+  }
+  
+  .catalog-item {
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+    max-width: 370px;
+  }
+  
+  .catalog-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .banner-plates {
+    height: 700px;
+    background: url('/assets/images/fon1.png') center / cover;
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+    margin-top: 100px;
+  }
+  .container1{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .category-wrap1{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .subtitle1{
+    font-family: 'Poppins' sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    color: var(--dark-danger);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+  .category-title1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: var(--black--black);
+    font-weight:100;
+  }
+ 
+ .form-text{
+  margin: 40px 0 20px;
+ }
+
+ .form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .checkbox-wrap{
+  display: block;
+ }
+.form-input{
+  width: 320px;
+  padding: 13px 10px;
+  margin-right: 11px;
+}
+
+.form-button {
+  background: #000;
+  color: white;
+  padding: 13px 10px;
+  width: 175px;
+}
+.checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #8534ff;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox:checked::before {
+  content: '✔';
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-wrap {
+  padding: 120px 0 80px;
+  background: #fbfbfb;
+  text-align: center;
+}
+
+.footer-contact {
+  text-transform: uppercase;
+}
+
+.footer-contact-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.subfooter {
+  background: #f7f7f7;
+  padding: 30px 0 20px;
+  text-align: center;
+  color: #6c6c6c;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.design {
+  color: #000;
+}
+
+@media screen and (max-width: 920px) {
+  .product-ceramic::before {
+    transform: translate(0%, -25%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shop-button {
+    display: flex;
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 400px;
+  }
+
+  .banner-wrap {
+    padding: 50px 0;
+  }
+
+  .title::before {
+    left: 190px;
+    top: 45px;
+  }
+
+  .title,
+  .title-plates {
+    font-size: 38px;
+    max-width: 330px;
+  }
+
+  .banner {
+    height: unset;
+    background: url('/assets/images/banner-image.png') center 70% / 100%,
+      url('/assets/images/banner-bg.png') center / cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  }
+
+  .nav-wrap {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .image-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .category-text,
+  .product-wrap {
+    flex-direction: column;
+  }
+  .product,
+  .product-ceramic {
+    max-width: 100%;
+  }
+  .product-ceramic {
+    order: -1;
+  }
+
+  .catalog-item {
+    max-width: 280px;
+  }
+  .item {
+    max-width: inherit;
+  }
+
+  .product::before {
+    content: '';
+    left: -40%;
+    width: 280px;
+    height: 400px;
+    background: url('/assets/images/pottery.png') center / contain no-repeat;
+  }
+  .product-ceramic::before {
+    content: '';
+    left: -20%;
+    width: 280px;
+    background: url('/assets/images/ceramic.png') center / contain no-repeat;
+  }
+
+  .category-text {
+    gap: 30px;
+  }
+
+  .catalog {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .product-wrap {
+    margin: 150px 0 100px;
+  }
+
+  .banner-plates .shop-button {
+    margin-top: unset;
+    display: block;
+    margin: unset;
+  }
+
+  .banner-plates {
+    height: 450px;
+  }
+
+  .form-input {
+    margin-bottom: 15px;
+  }
+
+  .checkbox-wrap {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer-contact-wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .shop-button {
+    display: flex;
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+
+  .banner {
+    height: unset;
+    background: url('/assets/images/banner-image.png') center 75% / 100%,
+      url('/assets/images/banner-bg.png') center / cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  }
+}
