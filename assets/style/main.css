@@ -62,8 +62,8 @@
   
   .banner {
     height: 700px;
-    background: url('/assets/images/kartina.jpg') right / 50%,
-      url('/assets/images/fon.jpg') center / cover;
+    background: url('../images/kartina.jpg') right / 50%,
+      url('../images/fon.jpg') center / cover;
     background-repeat: no-repeat;
     margin-bottom: 120px;
   }
@@ -93,7 +93,7 @@
   }
   
   .title::before {
-    content: url('/assets/images/&.png');
+    content: url('../images/&.png');
     position: absolute;
     left: 430px;
     top: -10px;
@@ -172,7 +172,7 @@
   }
   
   .product::before {
-    content: url('/assets/images/a2743382-d16a-4dd0-8059-5fba8dee2933.png');
+    content: url('../images/a2743382-d16a-4dd0-8059-5fba8dee2933.png');
     width: 250px;
     height: 509px;
     position: absolute;
@@ -187,7 +187,7 @@
     width: 350px;
     height: 417px;
     transform: translate(20%, -25%);
-    background: url(/assets/images/img4.png) no-repeat center / cover;
+    background: url(../images/img4.png) no-repeat center / cover;
   }
   
   .product-wrap {
@@ -239,7 +239,7 @@
   
   .banner-plates {
     height: 700px;
-    background: url('/assets/images/fon1.png') center / cover;
+    background: url('../images/fon1.png') center / cover;
     background-repeat: no-repeat;
     margin-bottom: 120px;
     margin-top: 100px;
@@ -373,8 +373,8 @@
 
   .banner {
     height: unset;
-    background: url('/assets/images/banner-image.png') center 70% / 100%,
-      url('/assets/images/banner-bg.png') center / cover;
+    background: url('../images/banner-image.png') center 70% / 100%,
+      url('../images/banner-bg.png') center / cover;
     background-repeat: no-repeat;
     margin-bottom: 50px;
   }
@@ -417,13 +417,13 @@
     left: -40%;
     width: 280px;
     height: 400px;
-    background: url('/assets/images/pottery.png') center / contain no-repeat;
+    background: url('../images/pottery.png') center / contain no-repeat;
   }
   .product-ceramic::before {
     content: '';
     left: -20%;
     width: 280px;
-    background: url('/assets/images/ceramic.png') center / contain no-repeat;
+    background: url('../images/ceramic.png') center / contain no-repeat;
   }
 
   .category-text {
@@ -473,8 +473,8 @@
 
   .banner {
     height: unset;
-    background: url('/assets/images/banner-image.png') center 75% / 100%,
-      url('/assets/images/banner-bg.png') center / cover;
+    background: url('../images/banner-image.png') center 75% / 100%,
+      url('../images/banner-bg.png') center / cover;
     background-repeat: no-repeat;
     margin-bottom: 50px;
   }
